@@ -2,6 +2,8 @@
 
 ## W folderze **lab1** znajdują sie pliki ze zrobionym pierwszym zadaniem oraz osobny plik **readme.md**.
 
+## w folderze **zrzuty** znajdują się zrzuty aplikacji
+
 **Wewnątrz folderu lab1:**
 
 - folder **.vscode** a w nim ustawienia związane z Visual Studio Code
