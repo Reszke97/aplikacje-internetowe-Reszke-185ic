@@ -12,7 +12,7 @@
 
 - folder **myvirtualenviroment** a wnim przygotowane środowisko wirtualne dla aplikacji
 
-- Plik **manage** 
+- Plik **manage.py** 
 
 - Plik **Procfile** a w nim potrzebna konfiguracja do uruchomienia strony przez hosta **heroku**
 
