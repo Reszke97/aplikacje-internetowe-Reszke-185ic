@@ -8,7 +8,7 @@
 
 - folder **blog** a wnim wszystkie pliki związane z aplikacją **blog**
 
-- folder **mysite** a w nim wszystkie ustawienia z plikiem **settings**
+- folder **mysite** a w nim wszystkie ustawienia wraz plikiem **settings**
 
 - folder **myvirtualenviroment** a wnim przygotowane środowisko wirtualne dla aplikacji
 
