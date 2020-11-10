@@ -5,14 +5,14 @@ from django.utils import timezone
 class Post(models.Model):
     autor = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     tytul = models.CharField(max_length=200)
-    text = models.TextField()
-    created_date = models.DateTimeField(
+    tekst = models.TextField()
+    data_utworzenia = models.DateTimeField(
             default=timezone.now)
-    published_date = models.DateTimeField(
+    data_opublikowania = models.DateTimeField(
             blank=True, null=True)
 
     def publish(self):
-        self.published_date = timezone.now()
+        self.data_opublikowania = timezone.now()
         self.save()
 
     def __str__(self):

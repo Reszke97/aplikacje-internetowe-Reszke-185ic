@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    {% for post in posts %}
+        <article class="postDiv">
+            <span class="articleSpan">
+                <p class="chocolateText">Data opublikowania: {{ post.data_opublikowania }}</p>
+                <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.tytul }}</a></h2>
+                <p>{{ post.tekst|linebreaksbr }}</p>
+            </span>
+        </article>
+    {% endfor %}
+{% endblock %}
