@@ -1,5 +1,5 @@
 # Aplikacja została utworzona na serwerze Heroku.
-## Do edycji wyglądu formularza wykorzystałem bootstrapa. Aby to osiągnąć najpierw generowałem bazowy formualrz Django a następnie kopiowałem elementy formularza django do ostylowanych formularzy bootstrapa. Dodatkowo zastosowałem mechanizm wykrywania błędów metodą **if form.errors** i przechodząc w pętlach po wszystkich wystąpnieniach błędów a następnie jeśli takowe wystąpiły to wypisane zostały w formolarzu inforumjąc użytkownika co należy poprawić.
+## Do edycji wyglądu formularza wykorzystałem bootstrapa. Aby to osiągnąć najpierw tworzyłem bazowy formularz Django a następnie kopiowałem elementy formularza Django do ostylowanych formularzy bootstrapa. Dodatkowo zastosowałem mechanizm wykrywania błędów metodą **if form.errors** i przechodząc w pętlach po wszystkich wystąpnieniach błędów a następnie jeśli takowe wystąpiły to wypisane zostały w formolarzu inforumjąc użytkownika co należy poprawić.
 #Link do strony na serwerze heroku:https://mareszkeblog.herokuapp.com/
 
 ## Strona główna bloga
