@@ -19,3 +19,7 @@
 - Plik **Procfile** a w nim potrzebna konfiguracja do uruchomienia strony przez hosta **heroku**
 
 - Plik **requirements.txt** a w nim lista wszystkich potrzebnych dodatków do naszej aplikacji
+
+
+**Folder lab2** został poszerzony o plik **runtime.txt**
+
