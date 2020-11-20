@@ -21,5 +21,7 @@
 - Plik **requirements.txt** a w nim lista wszystkich potrzebnych dodatków do naszej aplikacji
 
 
+## W folderze **lab2** znajdują sie pliki ze zrobionym drugim zadaniem oraz osobny plik **readme.md**.
+
 **Folder lab2** został poszerzony o plik **runtime.txt**
 
