@@ -1,5 +1,5 @@
 # Aplikacja została utworzona na serwerze Heroku.
-#Link do strony na serwerze heroku:https://blogreszke.herokuapp.com/
+#Link do strony na serwerze heroku:https://mareszkeblog.herokuapp.com/
 
 ## Strona główna bloga
 ![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/zrzuty/1.PNG)
