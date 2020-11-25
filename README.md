@@ -25,3 +25,6 @@
 
 **Folder lab2** został poszerzony o plik **runtime.txt**
 
+
+
+## W folderze **lab3** znajdują się pliki z rozwiązanym laboratorium nr 3 oraz **readme.md** .
