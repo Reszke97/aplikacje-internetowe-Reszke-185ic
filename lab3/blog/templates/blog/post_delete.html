@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    <article class="editDiv">
+    <h2 class="chocolateText">New post</h2>
+        {% if user.is_authenticated %}
+            <form method="POST" class="post-form">{% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="delete btn btn-danger buttonOnEditPage">Usuń</button>
+            </form>
+        {% endif %}
+    </article>
+{% endblock %}

@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "myvenvv\\Scripts\\python.exe",
+    "python.languageServer": "Pylance",
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django"
+    ],
+    /*"python.analysis.disabled": [
+        "unresolved-import"
+    ]*/
+}

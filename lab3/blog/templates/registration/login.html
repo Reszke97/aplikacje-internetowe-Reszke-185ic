@@ -1,0 +1,63 @@
+{% extends "blog/base.html" %}
+{% load account socialaccount %}
+{% load i18n %}
+{% get_providers as socialaccount_providers %}
+{% block content %}
+    <div class="signup-form pt-4">
+        <form method="post" action="{% url 'login'%}">    
+            {% csrf_token %}
+            <h2>Logowanie</h2>
+            {% if form.errors %}
+                <ul class="listaErrorow">
+                    {% for key, value in form.errors.items %}
+                        {% for error in value %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            <hr>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="login" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" required="" id="id_username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="hasło" name="password" autocomplete="current-password" required="" id="id_password">
+            </div>     
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary w100">Zaloguj</button>
+            </div>
+            <div class="form-group">
+                <p>Zapomniałeś hasła? <a href = "{% url 'password_reset' %}">Zresetuj hasło</a></p>
+            </div>
+            <div class="form-group">
+            <!--account_signup-->
+                <p>Stwórz nowe konto? <a href = "{% url 'sign_up' %}">Rejestracja</a></p>
+            </div>
+            <hr>
+            <h2>Zaloguj przez :</h2>
+                <div class="form-group">
+                    <ul class="socialaccount_providers noDotsList">
+                        <li class="buttonListMargin">
+                            <button class="btn w100 googleButton">
+                                <a title="Google" class="socialaccount_provider google socialSiteAnchor" href="/accounts/google/login/?process=login">
+                                    <b class=>G</b>  Google
+                                </a>
+                            </button>
+                        </li>
+                        <li class="buttonListMargin">
+                            <button class="btn w100 discordButton">
+                                <a title="Discord" class="socialaccount_provider discord socialSiteAnchor" href="/accounts/discord/login/?process=login">
+                                <span class="iconify" data-icon="simple-icons:discord" data-inline="false"></span>
+                                Discord</a>
+                            </button>
+                        </li>
+                    </ul> 
+                </div>
+        </form>
+    </div>
+    <!--<ul class="socialaccount_providers noDotsList">
+                    <li>
+                        <a title="Google" class="socialaccount_provider google" href="/accounts/google/login/?process=login">Google</a>
+                    </li>
+                </ul>--> 
+{% endblock %}

@@ -1,0 +1,49 @@
+{% load static %}
+<html>
+    <head>
+        <title>Reszke's Blog</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrapForm.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="introDiv">
+            <div class="divHeader">
+                <h1><a href="/">Blog Marcina</a></h1>
+            </div>
+            <div class="divPlus">
+                {% if user.is_authenticated %}
+                    <a href="{% url 'post_new' %}" class="top-menu"><span class="fa fa-plus fa-3x"></span></a>
+                    <p></p>
+                    <p class="logOutAnchorFontSize">Witaj {{ user.username }}    <a href="{% url 'logout' %}">(Wyloguj się)</a>/<a href="{% url 'password_change' %}">(Zmień hasło)</a></p>
+                {% else %}
+                    <a href="{% url 'login' %}"><span class="fa fa-lock fa-3x"></span></a>
+                {% endif %}
+            </div>
+        </div>
+        {% if request.path == '/' %}
+            <article class="entryStuff">
+                <h2>Witaj na moim Blogu!</h2>
+                <p>Nazywam się Marcin Reszke i na tym blogu będę dodawać różne zagadnienia z dziedziny informatyki.</p>
+                <p>Życzę udanej lektury :)</p>
+            </article>
+        {% endif %}
+        
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div>
+        <footer class="footer">
+            <a href='https://www.freepik.com/photos/background'>Background photo created by kjpargeter - www.freepik.com</a>
+        </footer>
+    </body>
+</html>
