@@ -18,7 +18,7 @@ Jak widać nie ma tam opcji Delete. Jest tak ponieważ w **permissions** został
 
 ### Swagger przedstawia się następująco:
 ![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab4/zrzuty/5.PNG)
-Jak widać są ta widoczne obie aplikacje.
+Jak widać są tam widoczne obie aplikacje.
 
 ### Tak przedstawia się widok dla metody get w intefejsie graficznym **Swaggera**
 ![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab4/zrzuty/6.PNG)
