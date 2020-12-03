@@ -28,3 +28,5 @@
 
 
 ## W folderze **lab3** znajdują się pliki z rozwiązanym laboratorium nr 3 oraz **readme.md** .
+
+## W folderze **lab4** znajdują się pliki z rozwiązanym laboratorium nr 4 oraz osobny plik **readme.md** .
