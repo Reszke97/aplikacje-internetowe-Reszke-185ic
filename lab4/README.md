@@ -7,7 +7,7 @@
 
 ### Po wybraniu postu konkretnego jako autor zostanie wywołana metoda **PostDetail** i tak przedstawia się jej widok:
 ![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab4/zrzuty/1.PNG)
-Jest tam opcja **delete** .
+Jak widać u góry jest tam opcja **delete** .
 
 ### Po wybraniu postu jako osoba, nie będąca autorem tak przedstawia się widok:
 ![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab4/zrzuty/2.PNG)
