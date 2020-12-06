@@ -82,7 +82,7 @@ oraz poza **installed_apps** dodać: **EMAIL_BACKEND = 'django.core.mail.backend
 ### Gdy użytkownik odwiedzi strone po raz kolejny to pokaże mu się napis "witaj z powrotem! oraz zmienna visits=2"
 ![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/14.PNG)
 
-# Aplikacja testApp(ap1/v2)
+# Aplikacja testApp(api v2)
 
 ## Dodany tutaj został **viewsets** oraz **routery** oraz niezbędne było zmodyfikowanie permisson classes gdyż we viewsetach nie jest czytane **defaultpermission z pliku settings**.
 
