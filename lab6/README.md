@@ -6,16 +6,16 @@
 - path('api/v2/rest-auth/registration/', include('rest_auth.registration.urls')),
 
 ### Tak przedstawia się widok logowania:
-![](1)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/1.PNG)
 
 ### Tak przedstawia się widok logout:
-![](2)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/2.PNG)
 
 ### Tak przedstawia się widok Password Reset:
-![](3)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/3.PNG)
 
 ### Tak przedstawia się widok Password Confirm:
-![](4)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/4.PNG)
 
 ### Dodany został również widok rejestracji dzięki pakietowi **Django-allauth**. Należy go zainstalować, następnie w pliku **settings.py** w **installed_apps** dodać:
 
@@ -32,30 +32,30 @@
 oraz poza **installed_apps** dodać: **EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'** oraz **SITE_ID = 1**
 
 ### Tak przedstawia się widok **rejestracji**
-![](5)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/5.PNG)
 
 
 ### Po zarejstrowaniu w panelu administratora pojawi się nam użytkownik:
-![](6)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/6.PNG)
 
 ### Pojawił się również token przypisany do użytkownika:
-![](7)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/7.PNG)
 
 ## Uwierzytelnianie w DRF posiada 2 domyślne metody: **SessionAuthentication** oraz **BasicAuthentication**, których nawet nie trzeba wpisywać w **'Default Authentication'**. Aby uruchomić uwierzytelnianie za pomocą tokenu należy dodać do **'DefaultAuthentication'** **TokenAuthentication**. Można połączyć uwierzytelnianie za pomocą tokenu i sesji co pokazuje rysunek poniżej:
 
-![](8)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/8.PNG)
 
 ### Jak widać gdy uwierzytelnianie dla sesji jest włączone to użytkownik bez tokenu również jest w stanie się zalogować.
-![](9)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/9.PNG)
 
 ### Jednak gdy zostawimy włączone uwierzytelnianie tylko za pomocą tokenu:
-![](11)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/11.PNG)
 
 ### Użtkownik bez tokenu nie będzie mógł się zalogować:
-![](10)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/10.PNG)
 
 ## Został utworzony również widok, który wyświetla wszystkich zarejstrowanych użytkowników:
-![](12)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/12.PNG)
 
 ## Dodany również został prosty licznik wizyt z użyciem ciasteczek. Do stworzenia licznika w naszym API niezbędne było zaznajomienie się z dokumentacją DRF a konkretnie https://www.django-rest-framework.org/tutorial/3-class-based-views/ . W widokach należalo utworzyć nową klasę **PostList** jako **APIView** i zaimportować:
 
@@ -72,36 +72,36 @@ oraz poza **installed_apps** dodać: **EMAIL_BACKEND = 'django.core.mail.backend
 - **dataflair** zawierający string z informacją.
 
 ## Tworzenie ciasteczek:
-![](20)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/20.PNG)
 
 ## Aby wyświetlić cookies w Google Chrome należy wejść w developer tools i następnie wybrać zakładkę Application.
 
 ### Gdy użytkownik odwiedzi strone po raz pierwszy to pokaże mu się napis "witaj po raz 1!" oraz zmienna visits=1:
-![](13)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/13.PNG)
 
 ### Gdy użytkownik odwiedzi strone po raz kolejny to pokaże mu się napis "witaj z powrotem! oraz zmienna visits=2"
-![](14)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/14.PNG)
 
 # Aplikacja testApp(ap1/v2)
 
 ## Dodany tutaj został **viewsets** oraz **routery** oraz niezbędne było zmodyfikowanie permisson classes gdyż we viewsetach nie jest czytane **defaultpermission z pliku settings**.
 
 ## Zamiast tworzyć 2 osobne klasy dla wyświetlenia wszystkich postów oraz wyświetlenia postów osobno tworzymy jedną klasę korzystając z viewsets.ModelViewSet nie trzeba podawać scieżek w url patterns ale należy skorzystać z Router'ów dzięki temu jest mniej wymaganych linii kodu. Teraz w pliku view należy dodatkowo do zmiennej **permission_classes** dodać isAuthenticated oraz zaimportować **from rest_framework.permissions import IsAuthenticated** 
-![](18)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/18.PNG)
 
 ## Tak musi wyglądać zmienna permisison_classes po zmianach:**permission_classes = (IsAuthorOrReadOnly,IsAuthenticated)**.
 
 ### Teraz gdy użytkownik nie będzie zalogowany to nie będzie w stanie wyświetlić danych:
-![](16)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/16.PNG)
 
 ### Tak przedstawia się widok BookViewSet:
-![](15)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/15.PNG)
 
 ### Tak przedstawia się widok UserViewSet:
-![](19)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/19.PNG)
 
 ## W pliku **urls.py** należy stworzyć nowy obiekt klasy router. Stworzony został SimpleRouter(). Następnie za pomocą obiektu tworzymy nowe scieżki za pomocą metody register() i przekazujemy tam jak ma nazywać się początek naszej scieżki i ViewSet. Po czym przekazujemy do urlpatterns nowo wygenerowane scieżki.
-![](17)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab6/zrzuty/17.PNG)
 
 
 
