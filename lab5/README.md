@@ -80,7 +80,7 @@ page = requests.get("https://codedamn-classrooms.github.io/webscraper-python-cod
     return render(request,'scrapping/home.html',{'top_items':top_items,'all_h1_tags':all_h1_tags, 
         'seventh_p_text':seventh_p_text,'all_links':all_links,'all_products':all_products})
 ```
-## W przykładzie nr 3 zmodyfikowałem kod w taki sposób aby dzięki wyrażeniom regualrnym otrzymać wszystkie linki zaczynające się od "https" a następnie w szablonie dodałem je do tagu **a** do atrubutu **href**
+## W przykładzie nr 3 zmodyfikowałem kod w taki sposób aby dzięki wyrażeniom regualarnym otrzymać wszystkie linki zaczynające się od "https" a następnie w szablonie dodałem je do tagu **a** do atrubutu **href**
 ## Tak przedstawia się div z przykładu nr 3 w szablonie home:
 
 
