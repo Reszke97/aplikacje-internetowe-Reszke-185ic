@@ -222,8 +222,8 @@ def scraping (request):
 ```python
 def xml(request):
     # Szukanie elementu poprzez xPath
-    url = 'https://www.octoparse.com/blog/top-30-free-web-scraping-software'    
-    path = '/html/body/div[2]/div[3]/div[1]/div[1]/div[2]/ul'
+    url = 'https://www.octoparse.com/blog/top-30-free-web-scraping-software'    #<------------- Tutaj wrzucam adres url
+    path = '/html/body/div[2]/div[3]/div[1]/div[1]/div[2]/ul' #<----------------------------Tutaj wrzucam scieżke xPath
     response = requests.get(url)
     source = html.fromstring(response.content)    
     tree = source.xpath(path)
@@ -237,8 +237,8 @@ def xml(request):
 ## Teraz pozostaje wrzucić ```url``` i nazwę klasy do naszego kodu:
 ```python
   # Szukanie elemntu przez nazwę klasy   
-    url = 'http://zacniewski.gitlab.io/'  
-    path = '//*[@class="well"]'
+    url = 'http://zacniewski.gitlab.io/'  #<---------------- Tutaj wrzucam adres url
+    path = '//*[@class="well"]' #<---------------- Tutaj wrzucam nazwę klasy
     response = requests.get(url)    
     source = html.fromstring(response.content)    
     tree = source.xpath(path)
