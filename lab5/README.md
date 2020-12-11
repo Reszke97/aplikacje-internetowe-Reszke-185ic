@@ -216,7 +216,7 @@ def scraping (request):
 ## Przykład nr 2 to pobranie adresu ``url`` a następnie po zbadaniu elementu pobranie scieżki xPath
 
 ## Proces przedstawia się następująco. Najpierw ze strony https://www.octoparse.com/blog/top-30-free-web-scraping-software pobieram jej adres url. Następnie klikam zbadaj i skopiuj xPath:
-![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/6.PNG)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/6.png)
 
 ## Następnie do kodu wrzucam scieżkę i kod prezentuje się następująco:
 ```python
@@ -232,7 +232,7 @@ def xml(request):
 
 ## Przykład nr 1 to również pobranie adresu ```url``` a następnie tym razem skopiwanie nazwy klasy.
 ## Proces przedstawia się następująco. Najpierw ze strony http://zacniewski.gitlab.io/ pobieram jej adres url. Następnie przechodzę do zbadania elementu i kopiuje nazwę klasy:
-![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/7.PNG)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/7.png)
 
 ## Teraz pozostaje wrzucić ```url``` i nazwę klasy do naszego kodu:
 ```python
