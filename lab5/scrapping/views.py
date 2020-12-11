@@ -10,19 +10,6 @@ import re
 def home(request):
     page = requests.get("https://codedamn-classrooms.github.io/webscraper-python-codedamn-classroom-website/")
     soup = BeautifulSoup(page.content, "html.parser")
-
-
-
-    """
-    websiteLink = request.POST.get('web_link', None)
-    element = request.POST.get('element', None)
-    source=requests.get(websiteLink)
-    
-    allElements = []
-    
-    soup = BeautifulSoup(source.content, "html.parser")
-    """
-
     # Przykład 1
     # Create all_h1_tags as empty list
     all_h1_tags = []
@@ -135,15 +122,13 @@ def scraping (request):
 
 
 def xml(request):
-    
-    # Szuaknie elementu przy pomocy xml
     # Szukanie elementu poprzez xPath
     url = 'https://www.octoparse.com/blog/top-30-free-web-scraping-software'    
     path = '/html/body/div[2]/div[3]/div[1]/div[1]/div[2]/ul'
     response = requests.get(url)
     source = html.fromstring(response.content)    
     tree = source.xpath(path)
-    lxml1 = tree[0].text_content()
+    lxmlPrzyklad2 = tree[0].text_content()
     
     # Szukanie elemntu przez nazwę klasy   
     url = 'http://zacniewski.gitlab.io/'  
@@ -151,6 +136,6 @@ def xml(request):
     response = requests.get(url)    
     source = html.fromstring(response.content)    
     tree = source.xpath(path)
-    lxml2 = tree[0].text_content()
+    lxmlPrzyklad1 = tree[0].text_content()
 
-    return render(request, 'scrapping/xpath.html', {'lxml1': lxml1,'lxml2': lxml2 })
+    return render(request, 'scrapping/xpath.html', {'lxml1': lxmlPrzyklad1,'lxml2': lxmlPrzyklad2 })
