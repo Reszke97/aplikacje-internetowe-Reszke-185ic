@@ -6,7 +6,7 @@
 ## Przed rozpoczęciem dodawania elementów należało pobrać pakiet **Beautifulsoup4** za pomocą polecenia ``pip install beautifulsoup4`` oraz pakiet **lxml** za pomocą polecenia ``pip install lxml``.
 
 ## Tak przedstawia się widok home:
-![](1)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/1.PNG)
 
 ### Do wyświetlenia przykładów z repozytorium wystarczyło przekazać do funkcji return funkcje **render** ze słownikiem, z szablonem do którego będziemy przekazywać dane oraz słownikiem z utowrzonymi danymi z web scrapingu.
 Tak wygląda kod z przykładami z repozytorium:
@@ -94,15 +94,15 @@ page = requests.get("https://codedamn-classrooms.github.io/webscraper-python-cod
 ```
 
 ## Do stworzenia formularza wykorzystałem gotowy formularz z bootstrapa https://getbootstrap.com/docs/4.0/components/forms/ . Dostosowałem go do potrzeb laboratoriów. Tak prezentuje się widok **scraping** z formularzem przed wyszukaniem wskazanego elementu:
-![](2)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/2.PNG)
 
 ## Jako przykład do wyświetlenia szukanego elementu posłużyłem się stroną https://zacniewski.gitlab.io/ .
 
 ## Tak przedstawiają się dane które podałem w formularzu:
-![](3)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/3.PNG)
 
 ## Po wykonaniu przeszukiwania tak przedstawia się widok dla tagu **p**:
-![](4)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/4.PNG)
 
 
 ## Tak przedstawia się funkcja w widokach służąca do pobierania danych:
@@ -166,7 +166,7 @@ def scraping (request):
 ## Dodatkowo za pomocą funckji .text zwracany jest tekst z danego tagu a w przypadku gdy jest to np. div to jako tekst wyświetlone zostanie również wyświetlone wszystko co jest wewnątrz diva (tzn. np **span** który posiada jakiś tekst i jest wewnątrz tego diva i wszystkie inne elementy posiadające tekst wchodzące w skład tego diva) a następnie za pomocą metody strip() pozbywamy się zbędnych spacji. Jeśli jednak któryś z tagów bądź atrybutów był pusty czyli po prostu wewnątrz elementu takowy nie występuje to zostanie do niego wpisany string "no matches" .
 
 ## Tak przedstawia się przykład dla elemntu "Div":
-![](5)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/5.PNG)
 
 ## Jak można zauważyć na rysnku powyżej zostało znalezione aż 28 elementów **div** a wewnątrz nich wyświetlone inne zdefiniowane wcześniej w funkcji elementy.
 
@@ -216,7 +216,7 @@ def scraping (request):
 ## Przykład nr 2 to pobranie adresu **url** a następnie po zbadaniu elementu pobranie scieżki xPath
 
 ## Proces przedstawia się następująco. Najpierw ze strony https://www.octoparse.com/blog/top-30-free-web-scraping-software pobieram jej adres url. Następnie klikam zbadaj i skopiuj xPath:
-![](6)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/6.PNG)
 
 ## Następnie do kodu wrzucam scieżkę i kod prezentuje się następująco:
 ```python
@@ -232,7 +232,7 @@ def xml(request):
 
 ## Przykład nr 1 to również pobranie adresu **url** a następnie tym razem skopiwanie nazwy klasy.
 ## Proces przedstawia się następująco. Najpierw ze strony http://zacniewski.gitlab.io/ pobieram jej adres url. Następnie przechodzę do zbadania elementu i kopiuje nazwę klasy:
-![](7)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/7.PNG)
 
 ## Teraz pozostaje wrzucić **url** i nazwę klasy do naszego kodu:
 ```python
@@ -268,5 +268,5 @@ def xml(request):
     return render(request, 'scrapping/xpath.html', {'lxml1': lxmlPrzyklad1,'lxml2': lxmlPrzyklad2 })
 ```
 ## Tak wygląda strona z pobranymi elementami:
-![](8)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/8.PNG)
 
