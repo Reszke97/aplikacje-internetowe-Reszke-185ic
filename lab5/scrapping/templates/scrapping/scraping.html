@@ -1,0 +1,38 @@
+{% extends 'scrapping/base.html' %}
+{% block content %}
+    <form method="POST" class="w40">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Podaj url</label>
+            <input type="text" name="web_link" class="form-control" required placeholder="Url">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Podaj szukany element</label>
+            <input type="text" class="form-control" name="element" required placeholder="element">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <ul style="font-family: 'Roboto', sans-serif;font-size:130%;font-weight:800;">
+        <li>Przeszukana strona to : <a href = "{{websiteLink}}">{{websiteLink}}</a></li>
+        <li>Poszukiwany element to : <span class="text-success">{{element}}</span></li>
+        <li>Liczba znalezionych elemntów : {{amount}}</li>
+    </ul>
+    <hr></hr>
+
+    {% for elements in allElements %}
+        <ul style="padding:2rem">
+            <li>klasa--------->{{elements.findClass}}</li>
+            <li>id--------->{{elements.findId}}</li>
+            <li>span--------->{{elements.findSpan}}</li>
+            <li>text--------->{{elements.getText}}</li>
+            {% if elements.findHref == 'no matches' %}
+                <li>link--------->{{elements.findHref}}<li>
+            {% else %}
+                <li><a href="{{elements.findHref}}">link--------->{{elements.findHref}}</a></li>
+            {% endif %}
+        </ul>
+    {% endfor %}
+{% endblock %}
+
+

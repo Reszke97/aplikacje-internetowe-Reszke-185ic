@@ -1,0 +1,39 @@
+{% extends 'scrapping/base.html' %}
+{% block content %}
+    <div class="twoRemPaddig">
+        <h1>Przykład 1</h1>
+        {% for allH in all_h1_tags %}
+            <ul>
+                <li>{{ allH }}</li>
+            </ul>
+        {%endfor%}
+        <span>{{seventh_p_text}}</span>
+    </div>
+    <div class="twoRemPaddig">
+        <h1>Przykład 2</h1>
+        {% for items in top_items  %}
+            <ul>
+                <li>{{items.title}}</li> 
+                <li>{{items.review}}</li>
+            </ul>
+        {% endfor %}
+    </div>
+    <div class="twoRemPaddig">
+        <h1>Przykład 3</h1>
+        {% for links in all_links %}
+            <a href = "{{links.href}}" >{{links.text}}</a>   
+        {% endfor %}
+    </div>
+    <div class="twoRemPaddig">
+        <h1>Przykład 4</h1>
+        {% for product in all_products %}
+            <ul>
+                <li>{{product.name}}</li>
+                <li>{{product.description}}</li>
+                <li>{{product.price}}</li>
+                <li>{{product.reviews}}</li>
+                <li>{{product.image}}</li>
+            </ul>
+        {% endfor %}
+    </div>
+{% endblock %}
