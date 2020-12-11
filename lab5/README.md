@@ -93,3 +93,180 @@ page = requests.get("https://codedamn-classrooms.github.io/webscraper-python-cod
 </div>
 ```
 
+## Do stworzenia formularza wykorzystałem gotowy formularz z bootstrapa https://getbootstrap.com/docs/4.0/components/forms/ . Dostosowałem go do potrzeb laboratoriów. Tak prezentuje się widok **scraping** z formularzem przed wyszukaniem wskazanego elementu:
+![](2)
+
+## Jako przykład do wyświetlenia szukanego elementu posłużyłem się stroną https://zacniewski.gitlab.io/ .
+
+## Tak przedstawiają się dane które podałem w formularzu:
+![](3)
+
+## Po wykonaniu przeszukiwania tak przedstawia się widok dla tagu **p**:
+![](4)
+
+
+## Tak przedstawia się funkcja w widokach służąca do pobierania danych:
+```python
+def scraping (request):
+    if request.method == "POST":
+        
+        websiteLink = request.POST.get('web_link', None)
+        element = request.POST.get('element', None)
+        url = websiteLink
+        source=requests.get(url).text
+
+        allElements = []
+        
+        soup = BeautifulSoup(source, "html.parser")
+
+        items = soup.find_all(element)
+        amount = len(items)    
+
+        for i in items:
+            # Szukanie klasy
+            findClass = i.get('class')
+            if findClass is None:
+                findClass = "no matches" 
+            
+            # Szukanie id
+            findId = i.get('id')
+            findId = findId.strip() if findId is not None else "no matches"
+
+            # Szukanie article
+            findArticle = i.get('article')
+            findArticle = findArticle.strip() if findArticle is not None else "no matches"
+
+            # Szukanie tekstu
+            getText = i.text
+            getText = getText.strip() if getText is not None else "no matches"
+
+            # Szukanie spanów
+            findSpan = i.get('span')
+            findSpan = findSpan.strip() if findSpan is not None else "no matches"
+
+            # Szukanie linków
+            findHref = i.get('href')
+            findHref = findHref.strip() if findHref is not None else "no matches"
+
+            allElements.append({"findId": findId, "findClass": findClass, "findArticle": findArticle, "getText": getText, 'findHref':findHref, 'findSpan': findSpan})
+        return render(request, 'scrapping/scraping.html', {'allElements':allElements, 'amount': amount, 'websiteLink': websiteLink, 'element':element})
+    return render(request, 'scrapping/scraping.html')
+```
+
+## Gdy wyślemy formularz do fuknckji trafia adres url oraz inorfmacja jakiego elementu funkcja ma szukać pod danym adresem url. Działa to w taki sposób, że po pobraniu wskazanego elementu poszukiwane są w nim tagi takie jak:
+
+- span
+- article
+
+## Oraz atrybuty :
+- id
+- class
+- href
+
+## Dodatkowo za pomocą funckji .text zwracany jest tekst z danego tagu a w przypadku gdy jest to np. div to jako tekst wyświetlone zostanie również wyświetlone wszystko co jest wewnątrz diva (tzn. np **span** który posiada jakiś tekst i jest wewnątrz tego diva i wszystkie inne elementy posiadające tekst wchodzące w skład tego diva) a następnie za pomocą metody strip() pozbywamy się zbędnych spacji. Jeśli jednak któryś z tagów bądź atrybutów był pusty czyli po prostu wewnątrz elementu takowy nie występuje to zostanie do niego wpisany string "no matches" .
+
+## Tak przedstawia się przykład dla elemntu "Div":
+![](5)
+
+## Jak można zauważyć na rysnku powyżej zostało znalezione aż 28 elementów **div** a wewnątrz nich wyświetlone inne zdefiniowane wcześniej w funkcji elementy.
+
+## Kodu z szablonu **scraping**(Jeśli link istnieje to zostajey on dodany do tagu **a** wraz z jego atrybutem **href**):
+
+```python
+{% extends 'scrapping/base.html' %}
+{% block content %}
+    <form method="POST" class="w40">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Podaj url</label>
+            <input type="text" name="web_link" class="form-control" required placeholder="Url">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Podaj szukany element</label>
+            <input type="text" class="form-control" name="element" required placeholder="element">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <ul style="font-family: 'Roboto', sans-serif;font-size:130%;font-weight:800;">
+        <li>Przeszukana strona to : <a href = "{{websiteLink}}">{{websiteLink}}</a></li>
+        <li>Poszukiwany element to : <span class="text-success">{{element}}</span></li>
+        <li>Liczba znalezionych elemntów : {{amount}}</li>
+    </ul>
+    <hr></hr>
+
+    {% for elements in allElements %}
+        <ul style="padding:2rem">
+            <li>klasa--------->{{elements.findClass}}</li>
+            <li>id--------->{{elements.findId}}</li>
+            <li>span--------->{{elements.findSpan}}</li>
+            <li>text--------->{{elements.getText}}</li>
+            {% if elements.findHref == 'no matches' %}
+                <li>link--------->{{elements.findHref}}<li>
+            {% else %}
+                <li><a href="{{elements.findHref}}">link--------->{{elements.findHref}}</a></li>
+            {% endif %}
+        </ul>
+    {% endfor %}
+{% endblock %}
+```
+
+## Na koniec do zastosowania XPath i xmlx stworzyłem strone z widokiem o nazwie **xpath** w którym zastosowałem obie metody. Przykład z pobraniem elementu za pomocą klasy(przykład nr2) i przykład z pobraniem scieżki xpath(przykład nr 1) znajdują się na stronie xPath obok siebie zostaną pokazane po krótkim omówieniu jak je znaleźć.
+
+## Przykład nr 2 to pobranie adresu **url** a następnie po zbadaniu elementu pobranie scieżki xPath
+
+## Proces przedstawia się następująco. Najpierw ze strony https://www.octoparse.com/blog/top-30-free-web-scraping-software pobieram jej adres url. Następnie klikam zbadaj i skopiuj xPath:
+![](6)
+
+## Następnie do kodu wrzucam scieżkę i kod prezentuje się następująco:
+```python
+def xml(request):
+    # Szukanie elementu poprzez xPath
+    url = 'https://www.octoparse.com/blog/top-30-free-web-scraping-software'    
+    path = '/html/body/div[2]/div[3]/div[1]/div[1]/div[2]/ul'
+    response = requests.get(url)
+    source = html.fromstring(response.content)    
+    tree = source.xpath(path)
+    lxmlPrzyklad2 = tree[0].text_content()
+```
+
+## Przykład nr 1 to również pobranie adresu **url** a następnie tym razem skopiwanie nazwy klasy.
+## Proces przedstawia się następująco. Najpierw ze strony http://zacniewski.gitlab.io/ pobieram jej adres url. Następnie przechodzę do zbadania elementu i kopiuje nazwę klasy:
+![](7)
+
+## Teraz pozostaje wrzucić **url** i nazwę klasy do naszego kodu:
+```python
+  # Szukanie elemntu przez nazwę klasy   
+    url = 'http://zacniewski.gitlab.io/'  
+    path = '//*[@class="well"]'
+    response = requests.get(url)    
+    source = html.fromstring(response.content)    
+    tree = source.xpath(path)
+    lxmlPrzyklad1 = tree[0].text_content()
+```
+
+## Finalnie funkcja w widokach wygląda następująco:
+```python
+def xml(request):
+    
+     # Szukanie elementu poprzez xPath
+    url = 'https://www.octoparse.com/blog/top-30-free-web-scraping-software'    
+    path = '/html/body/div[2]/div[3]/div[1]/div[1]/div[2]/ul'
+    response = requests.get(url)
+    source = html.fromstring(response.content)    
+    tree = source.xpath(path)
+    lxmlPrzyklad2 = tree[0].text_content()
+    
+    # Szukanie elemntu przez nazwę klasy   
+    url = 'http://zacniewski.gitlab.io/'  
+    path = '//*[@class="well"]'
+    response = requests.get(url)    
+    source = html.fromstring(response.content)    
+    tree = source.xpath(path)
+    lxmlPrzyklad1 = tree[0].text_content()
+
+    return render(request, 'scrapping/xpath.html', {'lxml1': lxmlPrzyklad1,'lxml2': lxmlPrzyklad2 })
+```
+## Tak wygląda strona z pobranymi elementami:
+![](8)
+
