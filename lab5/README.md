@@ -80,7 +80,7 @@ page = requests.get("https://codedamn-classrooms.github.io/webscraper-python-cod
     return render(request,'scrapping/home.html',{'top_items':top_items,'all_h1_tags':all_h1_tags, 
         'seventh_p_text':seventh_p_text,'all_links':all_links,'all_products':all_products})
 ```
-## W przykładzie nr 3 zmodyfikowałem kod w taki sposób aby dzięki wyrażeniom regualarnym otrzymać wszystkie linki zaczynające się od "https" a następnie w szablonie dodałem je do tagu **a** do atrubutu **href**
+## W przykładzie nr 3 zmodyfikowałem kod w taki sposób aby dzięki wyrażeniom regualarnym otrzymać wszystkie linki zaczynające się od "https" a następnie w szablonie dodałem je do tagu ```a``` do atrubutu ```href```
 ## Tak przedstawia się div z przykładu nr 3 w szablonie home:
 
 
@@ -93,7 +93,7 @@ page = requests.get("https://codedamn-classrooms.github.io/webscraper-python-cod
 </div>
 ```
 
-## Do stworzenia formularza wykorzystałem gotowy formularz z bootstrapa https://getbootstrap.com/docs/4.0/components/forms/ . Dostosowałem go do potrzeb laboratoriów. Tak prezentuje się widok **scraping** z formularzem przed wyszukaniem wskazanego elementu:
+## Do stworzenia formularza wykorzystałem gotowy formularz z bootstrapa https://getbootstrap.com/docs/4.0/components/forms/ . Dostosowałem go do potrzeb laboratoriów. Tak prezentuje się widok "scraping" z formularzem przed wyszukaniem wskazanego elementu:
 ![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/2.PNG)
 
 ## Jako przykład do wyświetlenia szukanego elementu posłużyłem się stroną https://zacniewski.gitlab.io/ .
@@ -101,7 +101,7 @@ page = requests.get("https://codedamn-classrooms.github.io/webscraper-python-cod
 ## Tak przedstawiają się dane które podałem w formularzu:
 ![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/3.PNG)
 
-## Po wykonaniu przeszukiwania tak przedstawia się widok dla tagu **p**:
+## Po wykonaniu przeszukiwania tak przedstawia się widok dla tagu ```p```:
 ![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/4.PNG)
 
 
@@ -170,7 +170,7 @@ def scraping (request):
 
 ## Jak można zauważyć na rysnku powyżej zostało znalezione aż 28 elementów **div** a wewnątrz nich wyświetlone inne zdefiniowane wcześniej w funkcji elementy.
 
-## Kodu z szablonu **scraping**(Jeśli link istnieje to zostajey on dodany do tagu **a** wraz z jego atrybutem **href**):
+## Kodu z szablonu "scraping"(Jeśli link istnieje to zostajey on dodany do tagu ``a`` wraz z jego atrybutem ``href``):
 
 ```python
 {% extends 'scrapping/base.html' %}
@@ -211,9 +211,9 @@ def scraping (request):
 {% endblock %}
 ```
 
-## Na koniec do zastosowania XPath i xmlx stworzyłem strone z widokiem o nazwie **xpath** w którym zastosowałem obie metody. Przykład z pobraniem elementu za pomocą klasy(przykład nr2) i przykład z pobraniem scieżki xpath(przykład nr 1) znajdują się na stronie xPath obok siebie zostaną pokazane po krótkim omówieniu jak je znaleźć.
+## Na koniec do zastosowania XPath i xmlx stworzyłem strone z widokiem o nazwie "xpath" w którym zastosowałem obie metody. Przykład z pobraniem elementu za pomocą klasy(przykład nr2) i przykład z pobraniem scieżki xpath(przykład nr 1) znajdują się na stronie xPath obok siebie zostaną pokazane po krótkim omówieniu jak je znaleźć.
 
-## Przykład nr 2 to pobranie adresu **url** a następnie po zbadaniu elementu pobranie scieżki xPath
+## Przykład nr 2 to pobranie adresu ``url`` a następnie po zbadaniu elementu pobranie scieżki xPath
 
 ## Proces przedstawia się następująco. Najpierw ze strony https://www.octoparse.com/blog/top-30-free-web-scraping-software pobieram jej adres url. Następnie klikam zbadaj i skopiuj xPath:
 ![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/6.PNG)
@@ -230,11 +230,11 @@ def xml(request):
     lxmlPrzyklad2 = tree[0].text_content()
 ```
 
-## Przykład nr 1 to również pobranie adresu **url** a następnie tym razem skopiwanie nazwy klasy.
+## Przykład nr 1 to również pobranie adresu ```url``` a następnie tym razem skopiwanie nazwy klasy.
 ## Proces przedstawia się następująco. Najpierw ze strony http://zacniewski.gitlab.io/ pobieram jej adres url. Następnie przechodzę do zbadania elementu i kopiuje nazwę klasy:
 ![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab5/zrzuty/7.PNG)
 
-## Teraz pozostaje wrzucić **url** i nazwę klasy do naszego kodu:
+## Teraz pozostaje wrzucić ```url``` i nazwę klasy do naszego kodu:
 ```python
   # Szukanie elemntu przez nazwę klasy   
     url = 'http://zacniewski.gitlab.io/'  
