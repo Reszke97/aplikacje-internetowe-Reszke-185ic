@@ -4,114 +4,114 @@
 ## W pierwszej kolejności wykonałem ciąg zadań o Redisie:
 
 ### Uruchomienie redisa:
-![](1a)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/1a.PNG)
 
 ### Sprawdzenie poprawności Redisa. Tutaj pobrałem rozszerzenie do visual studio z konsolą redisa i komendą ping sprawdziłem poprawność działania
 
 ### Tworzenie pary klucz i wartość
-![](1)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/1.PNG)
 
 ### Tworzenie pary klucz i wartość gdzie zwracany jest string
-![](2)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/2.PNG)
 
 ### Dołączenie do istnijącej wartości nowego stringa
-![](3)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/3.PNG)
 
 ### Usunięcie istniejącego klucza i wartości
-![](4)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/4.PNG)
 
 ### Dodawanie/Odejmowanie wartości od typu liczbowego
-![](5)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/5.PNG)
 
 ### Tworzenie listy
-![](6)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/6.PNG)
 
 ### Tworzenie listy ora jej wyświetlenie w podanym przedziale
-![](7)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/7.PNG)
 
 ### Metoda blokująca wykonywanie programu(brpop)
-![](8)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/8.PNG)
 
 ### Za pomocą RPUSH dodałem do listy element i jak widać po dodaniu elementu program zaczał działać wyszedł ze stanu zablokowania
-![](9)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/9.PNG)
 
 ### Dodanie i pobranie elementów do/ze zbiorów
-![](11)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/11.PNG)
 
 ### Praca na posortowanych zbiorach
-![](12)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/12.PNG)
 
 ### Posortowane zbiory o tej samej wadze
-![](13)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/13.PNG)
 
 ### Praca z Hashami - wykorzystanie metody **HGETALL**(wyświetla pare klucz wartość)
-![](14)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/14.PNG)
 
 ### Praca z Hashami - wykorzystanie metody **HKEYS**(wyświetla tylko nazwy kluczy)
-![](15)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/15.PNG)
 
 ### Praca z Hashami - wykorzystanie metody:
     - HEXISTS(sprawdza czy dany klucz istnieje)
     - HVALS(wyświetla tylko wartość bez klucza w słowniku)
-![](16)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/16.PNG)
 
 ### Metoda Pop w liście
-![](17)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/17.PNG)
 
 ### Pubsub
-![](18)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/18.PNG)
 
 ### Wykorzystanie strumieni
-![](19)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/19.PNG)
 
 ### Pubsub metoda **xadd**
-![](20)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/20.PNG)
 
 
 ### Strumienie Point - dodaje nowe dane do strumienia i są one wyświetlane
-![](22)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/22.PNG)
 
 ### Stumienie z pokazanym poprawnym odbieraniu elementów
-![](23)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/23.PNG)
 
 ### Pipelining benchmark(Jak widać na poniższym zdjęciu jest to użycie Pipeliningu mocno przyspiesza wykonywanie programu)
-![](24)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/24.PNG)
 
 ### Redis+Lua - wykonanie prostego skryptu zwracającego string
-![](25)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/25.PNG)
 
 ### Redis+Lua - przekazywanie parametrów do skryptu
-![](26)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/26.PNG)
 
 ### Redis+Lua - Wygenerowanie liczb wewnątrz Lua:
-![](27)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/27.PNG)
 
 ### Lua z JSON'em
-![](28)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/28.PNG)
 
 ### Redis+Lua - Pobranie z Redisa danych i przetworzenie ich i zapisanie wyniku
-![](29)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/29.PNG)
 
 ### Wynik z poprzedniego zadania w Redisie:
-![](30)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/30.PNG)
 
 ### Redis+Lua - Utworzenie uprawnień i nowej grupy użytkonwików
-![](31)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/31.PNG)
 
 ### Uprawnienia w Redisie po wykonanym działaniu programu:
-![](32)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/32.PNG)
 
 ### Redis+Lua przykład jak w skrócony sposób wywołać wykonany wcześniej skrypt:
-![](33)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/33.PNG)
 
 ### Nasłuchiwanie na każdą zmianę klucza wynikającą z komend dedykowanych stringowi(jak widać najpierw ustawiamy do wartości klucza 15 potem za pomocą append dodajemy do niego 11):
-![](34)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/34.PNG)
 
 ### Po wykonaniu LPUSH jak widać wartość zostaje nadpisana
-![](35)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/35.PNG)
 
 ### Nasłuchiwanie na każdą zmianę klucza wynikającą z komend dedykowanych stringowi(widać tutaj dodatkowo nazwę klucza)
-![](36)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/36.PNG)
 
 # Rozpoczęcie Projektu ThumbNailer
 
@@ -136,10 +136,10 @@ celery -A mysite worker -l info -P threads
 ## W przeciwnym razie task zostanie otrzymany lecz zawsze będzie w stanie **Pending**
 
 ## Utworzenie pierwszego Taska oraz uruchomienie celery
-![](37)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/37.PNG)
 
 ## Sprawdzanie tasku czy działa:
-![](39)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/39.PNG)
 
 # Wdrożenie projektu thumbnailer
 
@@ -224,25 +224,25 @@ def make_thumbnails(file_path, thumbnails=[]):
 ## Po tych modyfikacjach celery wykonywał obróbkę zdjęcia:
 
 ## Tak przedstawia się gotowa strona:
-![](40)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/40.PNG)
 
 ## Proces obróbki zdjęcia:
-![](41)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/41.PNG)
 
 ## Zdjęcie zostało pobrane
-![](42)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/42.PNG)
 
 ## Zawartość wypakowanego archiwum
-![](43)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/43.PNG)
 
 ## Tak przedstawia się stworzony wcześniej folder media/images po obróbce zdjęcia, jak widać są tam oba zdjęcia jedno po obróbce a drugie przed
-![](44)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/44.PNG)
 
 ## Tak przedstawia się konsola po wykonaniu zadania obróbki zdjęcia(pol prawej stronie zapytania do serwera a po lewej konsola celery). Tutaj odpalam już celery komendą:
 ```python
 celery -A mysite worker -l info -P gevent
 ```
-![](45)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/45.PNG)
 
 # Praca z Celery Beat
 
@@ -296,10 +296,10 @@ celery -A mysite worker -l info -P gevent
 ## Uruchamiam celery
 
 ## Tak przedstawiają sie konsole po włączeniu celery beat:
-![](46)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/46.PNG)
 
 ## Dodatkowo po zainstalowaniu celery beat i dodaniu w kodzie tasków w panelu administratora pojawia się nam Okno Periodic Task gdzie możemy dodawać nowe taski. Dodałem nowy Task o nazwie **Marik1234**. Jak widać można tam wybrać gotowy task z kodu.
-![](47)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/47.PNG)
 
 ## Tak przedstawia się task przeze mnie napisany, który dodałem przez panel administratora:
 ```python
@@ -309,8 +309,8 @@ def send_import_summary():
 ```
 
 ## Tak przedstawiają się konsole po dodaniu taska:
-![](48)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/48.PNG)
 
 ## Na zdjęciu poniżej widać wszystkie taski:
-![](49)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab7/zrzuty/49.PNG)
 
