@@ -1,0 +1,21 @@
+{"id":"WiVRy27dD4aslCeq","command":"EXISTS","arguments":"mykey"}
+{"id":"rWdpwG8gNKlYVE9D","command":"EXISTS","arguments":"key"}
+{"id":"8Cguj4Iya0qBefsN","command":"EXISTS","arguments":"Obliczenia"}
+{"id":"HB3N9CIWpmhG6wM1","command":"EXISTS","arguments":"example-list"}
+{"id":"swEMjQ41vOuCzl7J","command":"RPUSH","arguments":"key \"hello\""}
+{"id":"dfc6IvijMZxohGAK","command":"RPUSH","arguments":"example-list \"hello\""}
+{"id":"8g3LE9rTeQZhUmWt","command":"PING","arguments":""}
+{"id":"4TzcBhyUI2srJxG5","command":"HGETALL","arguments":"test_hash"}
+{"id":"UNlECMxLQfgeidJz","command":"HKEYS","arguments":"test_hash"}
+{"id":"A2xQ3FnTZWuLbXUN","command":"HVALS","arguments":"test_hash"}
+{"id":"gyVn0dHkBq5lxIiP","command":"HEXISTS","arguments":"test_hash key"}
+{"id":"Nt5BUY3sqeEbhxaO","command":"HEXISTS","arguments":"test_hash key3"}
+{"id":"OPMHXjTvQFNeuqc6","command":"HVALS","arguments":"test_hash"}
+{"id":"bZ8EHydVFUKjmGhR","command":"PUBLISH","arguments":"testowy_kanal_komunikacyjny testowa_wiadomosc"}
+{"id":"GabwsRdq7Z9ftm3o","command":"XADD","arguments":"strumienTestowy * key val"}
+{"id":"Pz6Rpb4vDcTGNC2q","command":"XADD","arguments":"testowy_strumien * key val"}
+{"id":"yr1B5GpdMOgES0D6","command":"SET","arguments":"test_key 15"}
+{"id":"y1sdhZvwJ9L6XRYf","command":"APPEND","arguments":"test_key 11"}
+{"id":"4Ur2q7wjkumzSJ5v","command":"LPUSH","arguments":"test_key 1"}
+{"id":"hUBwSsL219gx4K6T","command":"SET","arguments":"test_key 15"}
+{"id":"HXm0JCG3l54ZKVIv","command":"PING","arguments":""}

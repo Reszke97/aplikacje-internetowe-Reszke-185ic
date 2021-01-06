@@ -1,0 +1,12 @@
+{
+    "python.linting.pylintEnabled": false,
+    "python.linting.banditEnabled": true,
+    "python.linting.enabled": true,
+    "python.languageServer": "Pylance",
+    "redis-console.host": "localhost",
+    "redis-console.port": 6379,
+    "redis-console.password": "",
+    "redis-console.hostIpFamily": 4
+    
+}
+
