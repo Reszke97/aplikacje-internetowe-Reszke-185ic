@@ -178,13 +178,13 @@ urlpatterns = [
 ```
 
 ## Tak przedstawia się widok DRF Api dla listy wszystkich tutoriali:
-![](1)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/1.PNG)
 
 ## Tak wygląda widok dla TutorialDetail:
-![](2)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/2.PNG)
 
 ## Można standardowo wyświetlić dane w postaci JSON:
-![](3)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/3.PNG)
 
 # Tworzenie Frontendu:
 
@@ -739,37 +739,37 @@ export default class Tutorial extends Component {
 
 # Widok Strony Home:
 
-![](4)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/4.PNG)
 
 ## Tworzenie nowego Tutoriala:
-![](5)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/5.PNG)
 
 ## Po dodaniu tutoriala pojawia się komunikat:
-![](6)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/6.PNG)
 
 ## Na zdjęciu poniżej widać że dodano tutorial(nie wyświetlam zdjęć na stronie są one zapisywane w folderze **media**):
-![](7)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/7.PNG)
 
 ## Edycja istniejącego tutoriala:
-![](8)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/8.PNG)
 
 ## Komunikat o pomyślnym zaktualizowaniu zdjęcia:
-![](9)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/9.PNG)
 
 ## Jak widać na poniższym zdjęciu udało się zedytować tutorial(zedytowałem zdjęcie co jest odwzorowane w nazwie):
-![](10)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/10.PNG)
 
 ## Na poniższym zrzucie widać że w pliku media/covers/Test znajdują się zdjęcia(po wykonaniu publish zdjęcie zostaje tam dodane tak jak po wykonaniu update więc są 2 razy tes same):
-![](11)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/11.PNG)
 
 ## Po kliknięciu w edit i kiknięciu delete tutorial zostanie usunięty:
-![](12)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/12.PNG)
 
 ## Po dodaniu przykładowych tutoriali i kliknięciu delete wszystkie zostaną usnięte:
-![](13)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/13.PNG)
 
 ## Jak widać tutoriale zostały usunięte.
-![](14)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab9/zrzuty/14.PNG)
 
 # Do wykonania zadania pomcne były poniższe artykuły:
 - https://medium.com/@emeruchecole9/uploading-images-to-rest-api-backend-in-react-js-b931376b5833
