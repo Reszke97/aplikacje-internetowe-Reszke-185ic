@@ -7,10 +7,10 @@
 ## Wykorzystałem React Router połączony z Bootstrap NavBarem aby dodać jeszcze stronę **Home**
 
 ## Strona Home:
-![](1)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab10/zrzuty/1.PNG)
 
 ## Strona Todo List:
-![](2)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab10/zrzuty/2.PNG)
 
 
 # Tworzenie Backendu:
@@ -375,9 +375,6 @@ function Home(){ // <---------------------------- Zdefiniowałem metodę Home, k
   );
 }
 
-
-
-
 class Lista extends Component { // Funkcja która tworzy podstronę ToDo List
   constructor(props) {
     super(props);
@@ -523,27 +520,27 @@ export default App;
 # Działanie aplikacji:
 
 ## Dodanie nowego zadania bez ustalenia opcji "completed":
-![](3)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab10/zrzuty/3.PNG)
 
 ## Dodanie nowego zadania z opcją "completed":
-![](4)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab10/zrzuty/4.PNG)
 
 ## Gotowe zadanie pojawiło się pod zakładką "complete"
-![](5)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab10/zrzuty/5.PNG)
 
 ## Zadanie do zrobienia pojawiło się pod zakładką "incomplete"
-![](6)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab10/zrzuty/6.PNG)
 
 ## ToDo listy pojawiają się również w naszym "API":
-![](7)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab10/zrzuty/7.PNG)
 
 ## Po kliknięciu Delete usuń można usunąc wybrany ToDo:
 
 ## Przed usunięciem:
-![](8)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab10/zrzuty/8.PNG)
 
 ## Po usunięciu:
-![](9)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab10/zrzuty/9.PNG)
 
 
 
