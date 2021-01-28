@@ -37,6 +37,8 @@
 
 ## W folderze **lab7** znajdują się pliki z rozwiązanym laboratorium nr 7 oraz osobny plik **readme.md** .
 
+## W folderze **lab8** znajdują się pliki z rozwiązanym laboratorium nr 8 oraz osobny plik **readme.md** .
+
 ## W folderze **lab9** znajdują się pliki z rozwiązanym laboratorium nr 9 oraz osobny plik **readme.md** .
 
 ## W folderze **lab10** znajdują się pliki z rozwiązanym laboratorium nr 10 oraz osobny plik **readme.md** .
