@@ -1,0 +1,64 @@
+{% extends 'chat/base.html' %}
+{% block content %}
+    <div class="paddingTopAfterNav webWorkerMainDiv" align="center">
+        <form>
+            <div style="padding-top:1rem;">
+                <h3>Fibonacci Sequence</h3>
+                <input type="number" id="number" placeholder="Enter a number"style="padding:0.32rem;">
+                <button type="submit" class="btn btn-primary"style="transform:translate(-3%,-5%);">Enter</button>
+            </div>
+        </form>
+
+        <div id="result" style="overflow-y:auto;height:500px;width:100%;"></div>
+    </div>
+    <script id="fibonacci" type="javascript/worker">
+        self.onmessage = function(e) {
+            let userNum = Number(e.data);
+            fibonacci(userNum);
+        }
+
+        function fibonacci(number){
+            let array =[];
+            let variableA = 1, variableB = 0, temp,i=1;
+            while (number >= 0){
+                temp = variableA;
+                variableA = variableA + variableB;
+                variableB = temp;
+                array.push(variableA)
+                number--;
+                if(i==1){
+                    self.postMessage('First '+' number in the sequence '+ '= {'+array+'}');
+                    i++;
+                }
+                else{
+                    self.postMessage('First '+i+' numbers in the sequence '+ '= {'+array+'}');
+                    i++;
+                }
+            }
+
+        }
+    </script>
+
+    <script>
+        var blob = new Blob([document.querySelector('#fibonacci').textContent]);
+        blobURL = window.URL.createObjectURL(blob);
+        var form = document.querySelector('form');
+        var input = document.querySelector('input[type="number"]');
+        var result = document.querySelector('div#result');
+        var worker = new Worker(blobURL);
+
+        worker.onmessage = function(event) {
+            var para = document.createElement("p");
+            para.textContent = event.data;
+            result.appendChild(para);
+        };
+
+        form.onsubmit = function(event) {
+            event.preventDefault();
+            worker.postMessage(input.value);
+            input.value = '';
+        }
+    </script>
+
+
+{% endblock %}

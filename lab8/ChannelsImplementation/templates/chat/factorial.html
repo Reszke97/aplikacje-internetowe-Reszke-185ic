@@ -1,0 +1,54 @@
+{% extends 'chat/base.html' %}
+{% block content %}
+    <div class="paddingTopAfterNav webWorkerMainDiv" align="center">
+        <form>
+            <div style="padding-top:1rem;">
+                <h3>Factorial Calculation</h3>
+                <input type="number" id="number" placeholder="Enter a number"style="padding:0.32rem;">
+                <button type="submit" class="btn btn-primary"style="transform:translate(-3%,-5%);">Enter</button>
+            </div>
+        </form>
+
+        <div id="result2" style="overflow-y:auto;height:500px;width:100%;"></div>
+    </div>
+    <script id="factorial" type="javascript/worker">
+        var factorial
+        self.onmessage = function(e) {
+            let userNumber = Number(e.data);
+            factorial(userNumber);
+        }
+
+        function factorial(userNumber){
+            var temp;
+            factorial = userNumber;
+            console.log(factorial)
+            while (userNumber > 1){
+                userNumber--;
+                temp = factorial;
+                factorial *= userNumber;
+                self.postMessage(temp+'*'+userNumber+ '='+factorial);
+            }
+        }
+    </script>
+
+    <script>
+        var blob = new Blob([document.querySelector('#factorial').textContent]);
+        blobURL = window.URL.createObjectURL(blob);
+        var form = document.querySelector('form');
+        var input = document.querySelector('input[type="number"]');
+        var result = document.querySelector('div#result2');
+        var worker = new Worker(blobURL);
+
+        worker.onmessage = function(event) {
+            var para2 = document.createElement("p");
+            para2.textContent = event.data;
+            result.appendChild(para2);
+        };
+
+        form.onsubmit = function(event) {
+            event.preventDefault();
+            worker.postMessage(input.value);
+            input.value = '';
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'chat/base.html' %}
+{% block content %}
+   <div align="center">
+      <div class="paddingTopAfterNav p-3 rounded homeDiv"style="width:50%;"align="center">
+         <h1>Czat z użyciem Web Socket + Web Workers</h1>
+            <h2 class="h2Title">Part I</h2>
+            <ul class="homeUl">
+               <li>szybkie wyjaśnienie idei <a href="https://bulldogjob.pl/news/751-prosto-o-websocket">WebSockets,</a></li>
+               <li>więcej szczegółów na <a href="https://javascript.info/websocket">javascript.info,</a></li>
+               <li>moduł<a href="https://github.com/websockets/ws">ws</a> z Node.js,</li>
+               <li>czym jest <a href="https://www.fullstackpython.com/wsgi-servers.html">WSGI?</a>,</li>
+               <li>od Django 3.0 możemy również korzystać z zalet <a href ="https://arunrocks.com/a-guide-to-asgi-in-django-30-and-its-performance/">ASGI</a> (Asynchronous Server Gateway Interface),</li>
+               <li>przykład <a href="https://github.com/narrowfail/django-channels-chat">chata</a> z wykorzystaniem django-channels,</li>
+               <li>przykład z wykorzystaniem <a href="https://medium.com/@ksarthak4ever/django-websockets-and-channels-85b7d5e59dda">django-channels</a> do analizy i realizacji,</li>
+               <li>przykład z wykorzystaniem <a href="https://socket.io/get-started/chat/">socket.io</a> do budowy czata,</li>
+               <li>
+                  należy przejrzeć materiały z powyższych stron oraz wdrożyć przykład z wybranego linku z django-channels lub socket.io, 
+                  przy okazji komentując najważniejsze elementy kodu.
+               </li>
+            </ul>
+            <h2 class="h2Title">Part II</h2>
+            <ul class="homeUl">
+               <li>wyjaśnienie idei stosowania <a href="https://www.w3schools.com/html/html5_webworkers.asp">Web Workerów</a>,</li>
+               <li>praca z Web Worker’ami,</li>
+               <li>należy zwrócić uwagę na typowe dla Workerów elementy: event listener <b>onmessage</b> i funkcję <b>postMessage()</b>,</li>
+               <li>należy wdrożyć dwa Web Workery, z których każdy wykonuje “czasochłonne” obliczenia, np. obliczanie liczby ciągu Fibonnaciego.</li>
+            </ul>
+      </div>
+      
+   </div>
+{% endblock %}
