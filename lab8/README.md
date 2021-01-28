@@ -405,19 +405,19 @@ websocket_urlpatterns = [
 # Front End:
 
 ## Tak przedstawia się strona Home:
-![](2)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab8/zrzuty/2.PNG)
 
 ## Tak przedstawia się strona na której tworzony jest pokój:
-![](3)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab8/zrzuty/3.PNG)
 
 ## Na poniższym zrzucie uruchomiłem 2 przeglądarki po lewej Edge a po prawej chrome i jak widać są ta 2 różne ciasteczka, które zostają tam dodane po wpisaniu nicku do inputa z wcześniejszej strony oraz widać ze komunikacja działa poprawnie i widać osoby, które ze sobą piszą:
-![](4)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab8/zrzuty/4.PNG)
 
 ## Tak przedstawia się ogólny widok czatu:
-![](5)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab8/zrzuty/5.PNG)
 
 ## Tak przedstawia się ciąg fibonacciego:
-![](6)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab8/zrzuty/6.PNG)
 
 ## Tak przedstawia się silnia:
-![](7)
+![](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/blob/master/lab8/zrzuty/7.PNG)
