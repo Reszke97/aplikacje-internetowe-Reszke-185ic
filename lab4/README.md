@@ -1,7 +1,7 @@
 # Lab 4 – REST API z Django REST Framework
 
 ## Źródło
-🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab04/
+🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/
 
 
 ## Zadanie zostało wykonane od zera. Utworzone zostały 2 aplikacje: **Post** jako **api v1** oraz **testApp** jako **api v2** oraz zainstalowany został **Swagger** . DRF jest dużym udogodnieniem dla programisty, skraca potrzebny czas do tworzenia aplikacji oraz wymaga mniej kodu.
