@@ -1,3 +1,20 @@
+# Lab 06 – API + Frontend w React (część 2)
+
+## Źródło
+🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab06/
+
+## Cel
+
+Dodanie możliwości tworzenia, edycji i usuwania postów z poziomu Reacta.
+
+## Zadania
+
+- zapytania `POST`, `PUT`, `DELETE` do API z poziomu Reacta,
+- formularz do tworzenia/edycji posta (kontrolowane komponenty),
+- obsługa nawigacji (`react-router-dom`),
+- aktualizacja stanu po dodaniu/edycji/usunięciu wpisu.
+---
+
 # Zadanie zostało wykonane na istniejących już aplikacjach z laboratorium nr 4. Dodane zostały viewsety, routery, uwierzytelnianie oraz licznik wizyt z użyciem cookies. Zapoznanie dokumentacji przy dokonywaniu modyfikacji jest konieczne przy jakich kolwiek większych zmianach.
 
 # Aplikacja Post(api v1):
