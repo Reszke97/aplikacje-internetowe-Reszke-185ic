@@ -1,3 +1,37 @@
+# Lab 1 – Blog uruchomiony na PaaS
+
+## Zadanie
+
+- Utwórz repozytorium o nazwie `aplikacje-internetowe-nazwisko-185ic`, gdzie zamiast `nazwisko` wpisujesz swoje nazwisko lub numer indeksu.
+- W tym repozytorium umieszczaj kolejne zadania w osobnych folderach z własnymi plikami `README.md`.
+
+## Źródło
+
+- [Strona źródłowa zadania](https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab01/)
+
+## Wymagane elementy:
+
+Poniższe zagadnienia muszą zostać zrealizowane:
+
+- instalacja pakietów i tworzenie projektu,
+- korzystanie z serwera deweloperskiego,
+- modele, migracje i ORM,
+- ustawienia projektu,
+- tworzenie superusera i panelu admina,
+- tworzenie aplikacji w Django,
+- QuerySets i menadżery obiektów,
+- praca z plikami `views.py`, `urls.py` i szablonami,
+- praca z formularzami (dodawanie posta, edycja istniejącego posta),
+
+## Publikacja
+
+- Blog należy uruchomić na platformie typu PaaS (np. [Heroku](https://www.heroku.com/), [PythonAnywhere](https://www.pythonanywhere.com/)).
+- Dodatkowe punkty za przygotowanie widoku do [usuwania postów](https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab01/#usuwanie).
+- W przypadku Heroku konieczna będzie instalacja [Heroku-CLI](https://devcenter.heroku.com/articles/heroku-cli).
+
+---
+
+
 # Aplikacja została utworzona na serwerze Heroku.
 #Link do strony na serwerze heroku:https://mareszkeblog.herokuapp.com/
 
