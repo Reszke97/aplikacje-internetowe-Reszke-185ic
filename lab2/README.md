@@ -1,22 +1,7 @@
-# Lab 02 – Formularze i relacje między modelami
+# Lab 2 – Rejestracja użytkowników
 
 ## Źródło
 🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab02/
-
-## Cel
-
-- dodanie obsługi kategorii wpisów blogowych,
-- przypisywanie kategorii do postów (relacja ForeignKey),
-- utworzenie formularzy opartych na `ModelForm`,
-- prezentowanie danych w formularzu.
-
-## Wymagania
-
-- Model `Category` z polem `name`,
-- pole `category` w modelu `Post`,
-- widoki do dodawania i edytowania kategorii,
-- wykorzystanie formularzy w widokach `CreateView` i `UpdateView`,
-- szablony HTML z formularzami wyboru kategorii.
 ---
 
 # Aplikacja została utworzona na serwerze Heroku.
