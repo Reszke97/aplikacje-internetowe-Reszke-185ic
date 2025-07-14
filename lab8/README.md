@@ -1,3 +1,20 @@
+# Lab 08 – Autentykacja JWT (część 2)
+
+## Źródło
+🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab08/
+
+## Cel
+
+Wykorzystanie JWT w aplikacji frontendowej React.
+
+## Zadania
+
+- przechowywanie tokenów w `localStorage`,
+- przesyłanie tokenu w nagłówkach `Authorization`,
+- ochrona tras (route guarding),
+- przekierowanie niezalogowanego użytkownika.
+---
+
 # Czat z użyciem Web Socket + Web Workers. Wykorzystałem Django-Channels oraz przerobiłem inny przykład ponieważ miałem problem z przerobieniem przykładu https://medium.com/@ksarthak4ever/django-websockets-and-channels-85b7d5e59dda więc przerobiłem i wdrożyłem następujący przykład:https://channels.readthedocs.io/en/stable/tutorial/part_1.html.
 
 
