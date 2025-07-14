@@ -1,7 +1,7 @@
 # Lab 3 – Różne sposoby uwierzytelniania
 
 ## Źródło
-🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab03/
+🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/
 # Aplikacja została utworzona na serwerze Heroku.
 # Link do strony na serwerze heroku:https://mareszkeblog.herokuapp.com/
 Do zaimplementowania mechanizmu uwierzytelniniania użytkownika za pomocą aplikacji społecznościowych zastosowałem pakietu **django-allauth**. Korzystanie z pakietu **Django-allauth** jest przyjemne dla programisty ponieważ daje on dużo możliowści a przede wszystkim jest prosty w obsłudze i można korzystać z gotowych szablonów i widoków. W dokumentacji jest wszystko opisane a zmiany wymagają tylko kilku zmian w kodzie. Oczywiście można edytować lub dodawać swoje formularze czy szablony w zależności od potrzeb. Ja skorzystałem z prostej metody uwierzytelniania, która nie wymaga wcześniej podawania maila na naszym portalu aby zalogować się przez konto społecznościowe. Do stylowania wykorzystałem formularze **Bootstrapa** .
