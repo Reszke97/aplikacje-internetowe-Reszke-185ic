@@ -17,10 +17,22 @@ A full-stack student project built with React (frontend) and Django REST API (ba
 - Token-based authentication securing API
 - Frontend consuming API via fetch/axios
 
-## 📂 Project Structure
+## 📚 Laboratory Assignments
 
-```plaintext
-├── backend/         # Django project & apps
-├── frontend/        # React app
-│   └── src/         # React components, services
-├── README.md
+Each folder contains source code, descriptions, and screenshots:
+
+- [🔗 Lab 1 – Creating a Django REST API](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab1)
+- [🔗 Lab 2 – Models and Serializers](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab2)
+- [🔗 Lab 3 – Token Authentication and Permissions](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab3)
+- [🔗 Lab 4 – React + API Communication](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab4)
+- [🔗 Lab 5 – Full CRUD Operations in React](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab5)
+- [🔗 Lab 6 – Search Filtering and Ordering](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab6)
+- [🔗 Lab 7 – Advanced Filtering and Pagination](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab7)
+- [🔗 Lab 8 – Creating Related Models](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab8)
+- [🔗 Lab 9 – Handling Forms in React](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab9)
+- [🔗 Lab 10 – Final Integration with Full Functionality](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab10)
+
+## 🧠 Notes
+
+- Each lab is independent and focuses on a specific learning goal.
+- Intended for educational and demonstrational use.
