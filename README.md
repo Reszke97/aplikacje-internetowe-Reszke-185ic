@@ -1,44 +1,26 @@
-# aplikacje-internetowe-Reszke-185ic
+# 🌐 Internet Applications – Web App using React & Django
 
-## W folderze **lab1** znajdują sie pliki ze zrobionym pierwszym zadaniem oraz osobny plik **readme.md**.
+A full-stack student project built with React (frontend) and Django REST API (backend).
 
-## w folderze **zrzuty** znajdują się zrzuty aplikacji
+## 🛠️ Tech Stack
 
-**Wewnątrz folderu lab1:**
+- **Frontend**: React.js (CRA/Vite), JavaScript
+- **Backend**: Django + Django REST Framework
+- **Authentication**: Token-based (DRF Token Auth albo JWT)
+- **Database**: SQLite (default Django DB)
+- **Styling/UI**: CSS / optional library
 
-- folder **.vscode** a w nim ustawienia związane z Visual Studio Code
+## 💡 Features
 
-- folder **blog** a wnim wszystkie pliki związane z aplikacją **blog**
+- User registration & login
+- REST API endpoints: list/create entities
+- Token-based authentication securing API
+- Frontend consuming API via fetch/axios
 
-- folder **mysite** a w nim wszystkie ustawienia wraz z plikiem **settings**
+## 📂 Project Structure
 
-- folder **myvirtualenviroment** a wnim przygotowane środowisko wirtualne dla aplikacji
-
-- Plik **manage.py** 
-
-- Plik **Procfile** a w nim potrzebna konfiguracja do uruchomienia strony przez hosta **heroku**
-
-- Plik **requirements.txt** a w nim lista wszystkich potrzebnych dodatków do naszej aplikacji
-
-
-## W folderze **lab2** znajdują sie pliki ze zrobionym drugim zadaniem oraz osobny plik **readme.md**.
-
-**Folder lab2** został poszerzony o plik **runtime.txt**
-
-
-
-## W folderze **lab3** znajdują się pliki z rozwiązanym laboratorium nr 3 oraz **readme.md** .
-
-## W folderze **lab4** znajdują się pliki z rozwiązanym laboratorium nr 4 oraz osobny plik **readme.md** .
-
-## W folderze **lab5** znajdują się pliki z rozwiązanym laboratorium nr 5 oraz osobny plik **readme.md** .
-
-## W folderze **lab6** znajdują się pliki z rozwiązanym laboratorium nr 6 oraz osobny plik **readme.md** .
-
-## W folderze **lab7** znajdują się pliki z rozwiązanym laboratorium nr 7 oraz osobny plik **readme.md** .
-
-## W folderze **lab8** znajdują się pliki z rozwiązanym laboratorium nr 8 oraz osobny plik **readme.md** .
-
-## W folderze **lab9** znajdują się pliki z rozwiązanym laboratorium nr 9 oraz osobny plik **readme.md** .
-
-## W folderze **lab10** znajdują się pliki z rozwiązanym laboratorium nr 10 oraz osobny plik **readme.md** .
+```plaintext
+├── backend/         # Django project & apps
+├── frontend/        # React app
+│   └── src/         # React components, services
+├── README.md
