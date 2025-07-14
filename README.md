@@ -21,16 +21,16 @@ A full-stack student project built with React (frontend) and Django REST API (ba
 
 Each folder contains source code, descriptions, and screenshots:
 
-- [🔗 Lab 1 – Creating a Django REST API](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab1)
-- [🔗 Lab 2 – Models and Serializers](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab2)
-- [🔗 Lab 3 – Token Authentication and Permissions](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab3)
-- [🔗 Lab 4 – React + API Communication](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab4)
-- [🔗 Lab 5 – Full CRUD Operations in React](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab5)
-- [🔗 Lab 6 – Search Filtering and Ordering](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab6)
-- [🔗 Lab 7 – Advanced Filtering and Pagination](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab7)
-- [🔗 Lab 8 – Creating Related Models](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab8)
-- [🔗 Lab 9 – Handling Forms in React](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab9)
-- [🔗 Lab 10 – Final Integration with Full Functionality](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/main/lab10)
+- [🔗 Lab 1 – Creating a Django REST API](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/master/lab1)
+- [🔗 Lab 2 – Models and Serializers](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/master/lab2)
+- [🔗 Lab 3 – Token Authentication and Permissions](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/master/lab3)
+- [🔗 Lab 4 – React + API Communication](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/master/lab4)
+- [🔗 Lab 5 – Full CRUD Operations in React](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/master/lab5)
+- [🔗 Lab 6 – Search Filtering and Ordering](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/master/lab6)
+- [🔗 Lab 7 – Advanced Filtering and Pagination](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/master/lab7)
+- [🔗 Lab 8 – Creating Related Models](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/master/lab8)
+- [🔗 Lab 9 – Handling Forms in React](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/master/lab9)
+- [🔗 Lab 10 – Final Integration with Full Functionality](https://github.com/Reszke97/aplikacje-internetowe-Reszke-185ic/tree/master/lab10)
 
 ## 🧠 Notes
 
