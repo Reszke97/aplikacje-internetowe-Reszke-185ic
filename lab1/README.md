@@ -1,8 +1,6 @@
 # Lab 1 – Blog uruchomiony na PaaS
 ## Źródło
 https://zacniewski.gitlab.io/teaching/2020-internet-apps/
----
-
 
 # Aplikacja została utworzona na serwerze Heroku.
 #Link do strony na serwerze heroku:https://mareszkeblog.herokuapp.com/
