@@ -1,28 +1,22 @@
-# Lab 2 – Konfiguracja bazy danych i aplikacji w Django
+# Lab 02 – Formularze i relacje między modelami
 
 ## Źródło
-
-- [Strona źródłowa zadania](https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab02/)
+🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab02/
 
 ## Cel
 
-W ramach tego laboratorium skonfigurujesz aplikację Django oraz bazę danych PostgreSQL do działania lokalnie i na platformie PaaS (np. Heroku).
+- dodanie obsługi kategorii wpisów blogowych,
+- przypisywanie kategorii do postów (relacja ForeignKey),
+- utworzenie formularzy opartych na `ModelForm`,
+- prezentowanie danych w formularzu.
 
-## Krok po kroku
+## Wymagania
 
-1. **Dodaj plik `requirements.txt`** do repozytorium, aby określić zależności.
-2. **Zmień konfigurację bazy danych** w pliku `settings.py`, aby używała PostgreSQL zamiast SQLite (lokalnie i na PaaS).
-3. **Utwórz aplikację** (jeśli jeszcze nie istnieje) i zarejestruj ją w `INSTALLED_APPS`.
-4. **Dodaj model posta** (Post) z następującymi polami:
-   - `title` – tytuł wpisu (tekst krótki),
-   - `body` – treść wpisu (tekst długi),
-   - `created_at` – data dodania (auto ustawiana),
-   - `updated_at` – data edycji (auto ustawiana).
-
-5. **Wygeneruj i zastosuj migracje**:
-   ```bash
-   python manage.py makemigrations
-   python manage.py migrate
+- Model `Category` z polem `name`,
+- pole `category` w modelu `Post`,
+- widoki do dodawania i edytowania kategorii,
+- wykorzystanie formularzy w widokach `CreateView` i `UpdateView`,
+- szablony HTML z formularzami wyboru kategorii.
 ---
 
 # Aplikacja została utworzona na serwerze Heroku.
