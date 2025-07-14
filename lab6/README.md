@@ -1,7 +1,7 @@
 # Lab 6 – Zezwolenia i uwierzytelnianie w DRF
 
 ## Źródło
-🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab06/
+🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/
 
 
 # Zadanie zostało wykonane na istniejących już aplikacjach z laboratorium nr 4. Dodane zostały viewsety, routery, uwierzytelnianie oraz licznik wizyt z użyciem cookies. Zapoznanie dokumentacji przy dokonywaniu modyfikacji jest konieczne przy jakich kolwiek większych zmianach.
