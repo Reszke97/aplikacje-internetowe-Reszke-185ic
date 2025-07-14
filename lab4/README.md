@@ -1,3 +1,49 @@
+# Lab 4 – Tworzenie, edycja i usuwanie wpisów w Django
+
+## Źródło
+
+- [Strona źródłowa zadania](https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab04/)
+
+## Cel
+
+W tym laboratorium dodasz funkcjonalności umożliwiające:
+
+- dodawanie nowych wpisów,
+- edytowanie istniejących,
+- usuwanie wpisów.
+
+## Krok po kroku
+
+1. **Widoki (`views.py`)**:
+   - `PostCreateView` – tworzenie wpisu (dziedziczy po `CreateView`)
+   - `PostUpdateView` – edycja wpisu (`UpdateView`)
+   - `PostDeleteView` – usuwanie wpisu (`DeleteView`)
+
+2. **Szablony**:
+   - `post_form.html` – wspólny dla tworzenia i edycji:
+     ```django
+     <form method="post">
+       {% csrf_token %}
+       {{ form.as_p }}
+       <button type="submit">Save</button>
+     </form>
+     ```
+   - `post_confirm_delete.html` – potwierdzenie usunięcia:
+     ```django
+     <form method="post">
+       {% csrf_token %}
+       <p>Are you sure you want to delete "{{ object }}"?</p>
+       <button type="submit">Yes, delete</button>
+     </form>
+     ```
+
+3. **Routing (`urls.py`)**:
+   ```python
+   path('post/new/', PostCreateView.as_view(), name='post_new'),
+   path('post/<int:pk>/edit/', PostUpdateView.as_view(), name='post_edit'),
+   path('post/<int:pk>/delete/', PostDeleteView.as_view(), name='post_delete'),
+---
+
 ## Zadanie zostało wykonane od zera. Utworzone zostały 2 aplikacje: **Post** jako **api v1** oraz **testApp** jako **api v2** oraz zainstalowany został **Swagger** . DRF jest dużym udogodnieniem dla programisty, skraca potrzebny czas do tworzenia aplikacji oraz wymaga mniej kodu.
 
 ## Aplikacja Post(api v1):
