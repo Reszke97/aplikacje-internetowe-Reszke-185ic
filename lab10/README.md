@@ -1,4 +1,6 @@
-# Django + React (aplikacja typu ToDo)
+# Lab 10 – Django + React (aplikacja typu ToDo)
+## Źródło
+https://zacniewski.gitlab.io/teaching/2020-internet-apps/
 
 # Przerobiłem tutorial ze strony : https://www.digitalocean.com/community/tutorials/build-a-to-do-application-using-django-and-react
 
