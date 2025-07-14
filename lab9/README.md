@@ -1,7 +1,7 @@
 # Lab 9 – Django + React + Crud
 
 ## Źródło
-🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab08/
+🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/
 
 # Przerobiłem tutorial ze strony : https://bezkoder.com/django-react-axios-rest-framework/
 
