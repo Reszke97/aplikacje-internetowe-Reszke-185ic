@@ -1,3 +1,59 @@
+# Lab 3 – Widoki i szablony w Django
+
+## Źródło
+
+- [Strona źródłowa zadania](https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab03/)
+
+## Cel
+
+W tym laboratorium utworzysz widoki oraz szablony HTML w Django umożliwiające:
+
+- wyświetlanie listy wpisów na stronie głównej bloga,
+- przeglądanie pojedynczego wpisu po kliknięciu.
+
+## Krok po kroku
+
+1. **Widok listy postów (`PostListView`)**:
+   - Widok klasowy (`ListView`),
+   - Zwraca wszystkie posty posortowane malejąco po dacie dodania (`created_at`).
+
+2. **Widok pojedynczego posta (`PostDetailView`)**:
+   - Widok klasowy (`DetailView`),
+   - Pokazuje pełną treść wpisu po kliknięciu na tytuł.
+
+3. **Szablony HTML**:
+   - Utwórz folder `templates/blog/` i tam pliki:
+     - `post_list.html`
+     - `post_detail.html`
+   - W `post_list.html` umieść pętlę `for` po wszystkich postach:
+     ```django
+     {% for post in object_list %}
+       <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+       <p>{{ post.created_at }}</p>
+       <p>{{ post.body|truncatewords:30 }}</p>
+     {% endfor %}
+     ```
+
+4. **Routing (`urls.py`)**:
+   - Zdefiniuj ścieżki URL do widoków:
+     ```python
+     path('', PostListView.as_view(), name='post_list'),
+     path('post/<int:pk>/', PostDetailView.as_view(), name='post_detail'),
+     ```
+
+## Bonus
+
+- Dodaj link do powrotu na stronę główną w `post_detail.html`.
+
+## Rezultat
+
+Po wykonaniu:
+
+- Strona główna wyświetla listę wpisów z tytułem, datą i skrótem treści,
+- Kliknięcie w tytuł przekierowuje do pełnej treści wpisu.
+
+---
+
 # Aplikacja została utworzona na serwerze Heroku.
 # Link do strony na serwerze heroku:https://mareszkeblog.herokuapp.com/
 Do zaimplementowania mechanizmu uwierzytelniniania użytkownika za pomocą aplikacji społecznościowych zastosowałem pakietu **django-allauth**. Korzystanie z pakietu **Django-allauth** jest przyjemne dla programisty ponieważ daje on dużo możliowści a przede wszystkim jest prosty w obsłudze i można korzystać z gotowych szablonów i widoków. W dokumentacji jest wszystko opisane a zmiany wymagają tylko kilku zmian w kodzie. Oczywiście można edytować lub dodawać swoje formularze czy szablony w zależności od potrzeb. Ja skorzystałem z prostej metody uwierzytelniania, która nie wymaga wcześniej podawania maila na naszym portalu aby zalogować się przez konto społecznościowe. Do stylowania wykorzystałem formularze **Bootstrapa** .
