@@ -1,21 +1,8 @@
-# Lab 04 – REST API z Django REST Framework
+# Lab 4 – REST API z Django REST Framework
 
 ## Źródło
 🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab04/
 
-## Cel
-
-Stworzenie REST API do obsługi modelu `Post` z użyciem Django REST Framework.
-
-## Kroki
-
-- instalacja `djangorestframework`,
-- dodanie `rest_framework` do `INSTALLED_APPS`,
-- utworzenie `PostSerializer`,
-- utworzenie widoków `ListCreateAPIView` i `RetrieveUpdateDestroyAPIView`,
-- zdefiniowanie adresów URL dla API,
-- opcjonalnie: przetestowanie API przez Postman lub Django REST UI.
----
 
 ## Zadanie zostało wykonane od zera. Utworzone zostały 2 aplikacje: **Post** jako **api v1** oraz **testApp** jako **api v2** oraz zainstalowany został **Swagger** . DRF jest dużym udogodnieniem dla programisty, skraca potrzebny czas do tworzenia aplikacji oraz wymaga mniej kodu.
 
