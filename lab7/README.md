@@ -1,7 +1,7 @@
 # Lab 7 – Python + Django + Redis + Celery
 
 ## Źródło
-🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab07/
+🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/
 
 
 # Praca z Redisem + Django + Celery na systemie Windows 10 jest bardzo trudna ponieważ Celery od wersji 4.0 nie jest wspierane na Windowsie o czym dokładnie pokaże później.
