@@ -1,19 +1,8 @@
-# Lab 07 – Redis + Celery i Autentykacja JWT (część 1)
+# Lab 7 – Python + Django + Redis + Celery
 
 ## Źródło
 🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab07/
 
-## Cel
-
-Dodanie logowania po stronie backendu z wykorzystaniem JWT (JSON Web Token).
-
-## Zadania
-
-- instalacja `djangorestframework-simplejwt`,
-- konfiguracja JWT (`SimpleJWT`) w `settings.py` i `urls.py`,
-- endpointy do logowania i odświeżania tokenu,
-- testowanie tokenów przez Postmana.
----
 
 # Praca z Redisem + Django + Celery na systemie Windows 10 jest bardzo trudna ponieważ Celery od wersji 4.0 nie jest wspierane na Windowsie o czym dokładnie pokaże później.
 # Przechodząc dalej to wykonałem projekt ze strony https://stackabuse.com/asynchronous-tasks-in-django-with-redis-and-celery/ oraz zadania od Pana Mazurka ze strony https://mmazurek.dev/tag/redis-i-python/?order=asc.
