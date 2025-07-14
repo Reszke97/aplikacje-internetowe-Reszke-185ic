@@ -1,44 +1,18 @@
-# Lab 3 – Widoki i szablony w Django
+# Lab 03 – Autoryzacja użytkownika i uprawnienia
 
 ## Źródło
-
-- [Strona źródłowa zadania](https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab03/)
+🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab03/
 
 ## Cel
 
-W tym laboratorium utworzysz widoki oraz szablony HTML w Django umożliwiające:
+- Wprowadzenie logowania, rejestracji oraz zarządzania uprawnieniami użytkowników.
 
-- wyświetlanie listy wpisów na stronie głównej bloga,
-- przeglądanie pojedynczego wpisu po kliknięciu.
+## Zadania
 
-## Krok po kroku
-
-1. **Widok listy postów (`PostListView`)**:
-   - Widok klasowy (`ListView`),
-   - Zwraca wszystkie posty posortowane malejąco po dacie dodania (`created_at`).
-
-2. **Widok pojedynczego posta (`PostDetailView`)**:
-   - Widok klasowy (`DetailView`),
-   - Pokazuje pełną treść wpisu po kliknięciu na tytuł.
-
-3. **Szablony HTML**:
-   - Utwórz folder `templates/blog/` i tam pliki:
-     - `post_list.html`
-     - `post_detail.html`
-   - W `post_list.html` umieść pętlę `for` po wszystkich postach:
-     ```django
-     {% for post in object_list %}
-       <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
-       <p>{{ post.created_at }}</p>
-       <p>{{ post.body|truncatewords:30 }}</p>
-     {% endfor %}
-     ```
-
-4. **Routing (`urls.py`)**:
-   - Zdefiniuj ścieżki URL do widoków:
-     ```python
-     path('', PostListView.as_view(), name='post_list'),
-     path('post/<int:pk>/', PostDetailView.as_view(), name='post_detail'),
+- konfiguracja systemu rejestracji i logowania (własne widoki lub `LoginView`, `LogoutView`),
+- tworzenie konta użytkownika (`UserCreationForm`),
+- zabezpieczenie dodawania/edycji/usuwania wpisów – tylko dla zalogowanych,
+- ograniczenie edycji/usuwania do autora posta.
      ```
 
 ## Bonus
@@ -51,7 +25,6 @@ Po wykonaniu:
 
 - Strona główna wyświetla listę wpisów z tytułem, datą i skrótem treści,
 - Kliknięcie w tytuł przekierowuje do pełnej treści wpisu.
-
 ---
 
 # Aplikacja została utworzona na serwerze Heroku.
