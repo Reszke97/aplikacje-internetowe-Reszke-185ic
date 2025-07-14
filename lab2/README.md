@@ -1,7 +1,7 @@
 # Lab 2 – Rejestracja użytkowników
 
 ## Źródło
-🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab02/
+🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/
 
 # Aplikacja została utworzona na serwerze Heroku.
 ## Do edycji wyglądu formularza wykorzystałem bootstrapa. Aby to osiągnąć najpierw tworzyłem bazowy formularz Django a następnie kopiowałem elementy formularza Django do ostylowanych formularzy bootstrapa. Dodatkowo zastosowałem mechanizm wykrywania błędów metodą **if form.errors** i przechodząc w pętlach po wszystkich wystąpnieniach błędów a następnie jeśli takowe wystąpiły to wypisane zostały w formolarzu inforumjąc użytkownika co należy poprawić.
