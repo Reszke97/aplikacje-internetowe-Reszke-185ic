@@ -1,3 +1,30 @@
+# Lab 2 – Konfiguracja bazy danych i aplikacji w Django
+
+## Źródło
+
+- [Strona źródłowa zadania](https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab02/)
+
+## Cel
+
+W ramach tego laboratorium skonfigurujesz aplikację Django oraz bazę danych PostgreSQL do działania lokalnie i na platformie PaaS (np. Heroku).
+
+## Krok po kroku
+
+1. **Dodaj plik `requirements.txt`** do repozytorium, aby określić zależności.
+2. **Zmień konfigurację bazy danych** w pliku `settings.py`, aby używała PostgreSQL zamiast SQLite (lokalnie i na PaaS).
+3. **Utwórz aplikację** (jeśli jeszcze nie istnieje) i zarejestruj ją w `INSTALLED_APPS`.
+4. **Dodaj model posta** (Post) z następującymi polami:
+   - `title` – tytuł wpisu (tekst krótki),
+   - `body` – treść wpisu (tekst długi),
+   - `created_at` – data dodania (auto ustawiana),
+   - `updated_at` – data edycji (auto ustawiana).
+
+5. **Wygeneruj i zastosuj migracje**:
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+---
+
 # Aplikacja została utworzona na serwerze Heroku.
 ## Do edycji wyglądu formularza wykorzystałem bootstrapa. Aby to osiągnąć najpierw tworzyłem bazowy formularz Django a następnie kopiowałem elementy formularza Django do ostylowanych formularzy bootstrapa. Dodatkowo zastosowałem mechanizm wykrywania błędów metodą **if form.errors** i przechodząc w pętlach po wszystkich wystąpnieniach błędów a następnie jeśli takowe wystąpiły to wypisane zostały w formolarzu inforumjąc użytkownika co należy poprawić.
 #Link do strony na serwerze heroku:https://mareszkeblog.herokuapp.com/
