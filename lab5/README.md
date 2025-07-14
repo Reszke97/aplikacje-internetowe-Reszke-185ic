@@ -1,4 +1,4 @@
-# Lab 05 – API + Frontend w React (część 1)
+# Lab 05 – WebScrapping + API + Frontend w React (część 1)
 
 ## Źródło
 🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab05/
