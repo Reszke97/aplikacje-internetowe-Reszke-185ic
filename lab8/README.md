@@ -1,7 +1,7 @@
 # Lab 8 – Czat z użyciem Web Socket + Web Workers
 
 ## Źródło
-🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab08/
+🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/
 
 # Czat z użyciem Web Socket + Web Workers. Wykorzystałem Django-Channels oraz przerobiłem inny przykład ponieważ miałem problem z przerobieniem przykładu https://medium.com/@ksarthak4ever/django-websockets-and-channels-85b7d5e59dda więc przerobiłem i wdrożyłem następujący przykład:https://channels.readthedocs.io/en/stable/tutorial/part_1.html.
 
