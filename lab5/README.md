@@ -1,19 +1,7 @@
-# Lab 05 – WebScrapping + API + Frontend w React (część 1)
+# Lab 5 – WebScrapping
 
 ## Źródło
 🔗 https://zacniewski.gitlab.io/teaching/2020-internet-apps/lab05/
-
-## Cel
-
-Połączenie frontendowej aplikacji React z backendem Django REST API.
-
-## Zadania
-
-- Utworzenie projektu React (np. Vite),
-- dodanie zapytań `GET` do API (lista postów),
-- wyświetlenie danych z backendu w komponencie React (`fetch`, `useEffect`, `useState`),
-- obsługa wyświetlania pojedynczego posta.
----
 
 # Aby wykonać laboratorium stworzyłem nową aplikację. Dodałem do niej 3 widoki:
 - Widok **home** jako stronę główną a na niej wykonane przykłady z wykładu,
