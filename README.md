@@ -4,9 +4,9 @@ A full-stack student project built with React (frontend) and Django REST API (ba
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React.js (CRA/Vite), JavaScript
+- **Frontend**: React.js, JavaScript
 - **Backend**: Django + Django REST Framework
-- **Authentication**: Token-based (DRF Token Auth albo JWT)
+- **Authentication**: Token-based (DRF Token Auth or JWT)
 - **Database**: SQLite (default Django DB)
 - **Styling/UI**: CSS / optional library
 
